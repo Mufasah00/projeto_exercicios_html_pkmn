@@ -158,9 +158,9 @@ header#cabecalho h2 {
 
    header#cabecalho-artigo h2 {
     font-size: 13pt;
-    color: #ffffff;
-    background-color: rgba(61, 122, 189, 1);
+    color: rgba(255, 255, 255, .9);
     margin: 0px;
+    background-color: rgba(0, 0, 0, .0);
    }
 
    header#cabecalho-artigo h3 {
