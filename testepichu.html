@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Teste JavaScript com Pichu</title>
+	<script>
+		var raichu = false;
+		function mudaPichu (tipo) {
+			if (!raichu) {
+			document.getElementById("p1").src = "_imagens/" + tipo + ".gif";
+			if (tipo == 'raichu_animado') {
+				raichu = true;
+			}
+          }
+		}
+	</script>	
+</head>
+<body>
+	<h1>Testando com o Pichu</h1>
+	<img src="_imagens/pichu_animado.gif" id="p1" onmousemove="mudaPichu('pikachu_animado')" onmouseout="mudaPichu('pichu_animado')" onclick="mudaPichu('raichu_animado')"/>
+ 
+</body>
+</html>
