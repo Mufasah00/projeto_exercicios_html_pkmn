@@ -5,6 +5,11 @@
 	<title>Pokémon Black & White</title>
 	<link rel="stylesheet" type="text/css" href="_css/estilo.css">
 </head>
+<script>
+function mudaPichu (pichu) {
+	document.getElementById("icone").src = pichu;
+}
+</script>
 <body>
  <div id="interface">
  	<header id="cabecalho">
@@ -18,8 +23,8 @@
 <h1>Menu Principal</h1>
 <ul>
 <li><a href="index.html">Home</a></li>
-<li><a href="https://serebii.net/" target="_blank">Serebii.Net</a></li>
-<li><a href="fale-conosco.html">Quem Sou Eu ?</a></li>
+<li onmouseover="mudaPichu('_imagens/pikachu_animado.gif')" onmouseout="mudaPichu('_imagens/pichu_animado.gif')"><a href="https://serebii.net/" target="_blank">Serebii.Net</a></li>
+<li onmouseover="mudaPichu('_imagens/raichu_animado.gif')" onmouseout="mudaPichu('_imagens/pichu_animado.gif')"><a href="fale-conosco.html">Quem Sou Eu ?</a></li>
 </ul>
 </nav>
 </header>
