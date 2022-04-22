@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Teste JavaScript Pokemon Trainer</title>
+</head>
+<script>
+	var hilbert3 = false;
+	var hilda3 = false;
+
+	function mudaHomem (tipo1) {
+		if (!hilbert3) {
+			document.getElementById("homem").src = "_imagens/" + tipo1 + ".png";
+			if (tipo1 == 'hilbert3') {
+				hilbert3 = true;
+			}
+		}
+	}
+	function mudaMulher (tipo2) {
+		if (!hilda3) {
+			document.getElementById("mulher").src = "_imagens/" + tipo2 + ".png"
+			if (tipo2 == 'hilda3') {
+				hilda3 = true;
+			}
+		}
+
+	}
+</script>
+<body>
+	<h1>Pokémon Trainer BW</h1>
+	<img id="homem" src="_imagens/hilbert.png" onmousemove="mudaHomem('hilbert2')" onmouseout="mudaHomem('hilbert')" onclick="mudaHomem('hilbert3')">
+	<img id="mulher" src="_imagens/hilda.png" onmousemove="mudaMulher('hilda2')" onmouseout="mudaMulher('hilda')" onclick="mudaMulher('hilda3')">
+</body>
+</html>

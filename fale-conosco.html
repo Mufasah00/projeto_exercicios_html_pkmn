@@ -4,6 +4,59 @@
 	<meta charset="utf-8">
 	<title>Pokémon Black & White</title>
 	<link rel="stylesheet" type="text/css" href="_css/estilo.css">
+	<!-- configuração css3 do estilo do corpo -->
+	<style>
+		body {
+			font-family: 'Arial', sans-serif;
+			font-size: 12pt;
+			color: rgba(143, 149, 155, 1);
+		}
+
+		p {
+			text-align: justify;
+			text-indent: 20px;
+		}
+
+		article h1 {
+			font-size: 15pt;
+			color: #ffffff;
+			background-color: rgba(61, 122, 189, 1);
+			padding: 5px;
+			margin: 0px 715px 0px 0px;
+		}
+
+		div.conteudo {
+			display: table;
+		}
+
+		div.imagem {
+			display: table-cell;
+			float: left;
+			padding: 3px;
+			background-color: rgba(0, 0, 0, .5);
+			height: 190px;
+		}
+
+		div.texto {
+			display: table-cell;
+			float: left;
+			width: 490px;
+			padding: 3px;
+			background-color: rgba(0, 0, 0, .5);
+		}
+
+		div.texto h1 {
+			display: block;
+			margin: 0px;
+			text-align: top;
+		}
+
+		div.imagem-d {
+			display: inline-block;
+			float: right;
+			margin: 100px 0px 0px 130px;
+		}
+	</style>
 </head>
 <script>
 function mudaPichu (pichu) {
@@ -28,11 +81,23 @@ function mudaPichu (pichu) {
 </ul>
 </nav>
 </header>
+<body>
+<article>
+<div class="conteudo">
+<div class="imagem">
+<img src="_imagens/eu.png" alt="Autoretrato de Marcello Deodoro">
+</div>
 
-<img src="_imagens/eu.png">
-<h1>Quem sou eu ?</h1>
+<div class="texto">
+<h1>Euzinho!</h1>
 <p>Olá, eu me chamo Marcello Deodoro de Oliveira e tenho 25 anos, nasci e fui criado no estado e na cidade do Rio de Janeiro mas atualmente eu estou morando no interior de São Paulo em uma cidade chamada José Bonifácio. Estou estudando desenvolvimento web e este site se trata justamente sobre isso, este é um projeto particular para que eu consiga estudar o que venho aprendendo e aprimorar esses estudos de forma criativa e proveitosa.</p>
-
+</div>
+<div class="imagem-d">
+<img src="_imagens/hilbert2.png"/>
+</div>
+</div>
+</article>
+</body>
 <footer id="rodape">
 <p>Copyright 2022 - Marcello Deodoro</br>
 </footer>
