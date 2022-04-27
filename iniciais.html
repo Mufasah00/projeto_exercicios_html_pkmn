@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Pokémon Black & White</title>
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css">
+	<link rel="stylesheet" href="_css/iniciais.css"/>
+	<style>
+		   header#cabecalho-iniciais h1 {
+    font-family: 'Source Serif Pro', sans-serif;
+    font-size: 20pt;
+    color: #ffffff;
+    margin-bottom: 0px;
+    margin-top: 0px;
+   }
+
+   header#cabecalho-iniciais h2 {
+    font-size: 13pt;
+    color: rgba(255, 255, 255, .9);
+    margin: 0px;
+    background-color: rgba(0, 0, 0, .0);
+   }
+
+   header#cabecalho-iniciais h3 {
+    font-size: 12px;
+    color: rgba(255, 255, 255, .7);
+    text-align: right;
+    margin-top: 0px;
+   }
+
+   .direita-iniciais {
+    text-align: right;
+   }
+	</style>
+</head>
+<script>
+function mudaPichu (pichu) {
+	document.getElementById("icone").src = pichu;
+}
+</script>
+<body>
+ <div id="interface">
+ 	<header id="cabecalho">
+<hgroup>
+<h1>Pokémon Black & White</h1>
+<h2>Uma revolução no mundo pokémon</h2>
+</hgroup>
+
+<img id="icone" src="_imagens/pikachu_animado.gif"/>
+<nav id="menu">
+<h1>Menu Principal</h1>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li onmouseover="mudaPichu('_imagens/pikachu_animado.gif')" onmouseout="mudaPichu('_imagens/pikachu_animado.gif')"><a href="iniciais.html">Iniciais</a></li>
+<li onmouseover="mudaPichu('_imagens/pikachu_animado.gif')" onmouseout="mudaPichu('_imagens/pikachu_animado.gif')"><a href="professor.html">Professor</a></li>
+<li onmouseover="mudaPichu('_imagens/pikachu_animado.gif')" onmouseout="mudaPichu('_imagens/pikachu_animado.gif')"><a href="https://serebii.net/" target="_blank">Serebii.Net</a></li>
+<li onmouseover="mudaPichu('_imagens/raichu_animado.gif')" onmouseout="mudaPichu('_imagens/pikachu_animado.gif')"><a href="fale-conosco.html">Quem Sou Eu ?</a></li>
+</ul>
+</nav>
+</header>
+
+<article id="corpo-iniciais">
+	<header id="cabecalho-iniciais">
+		<hgroup>
+			<h1>Os Iniciais de Unova</h1>
+			<h2>Poderosos, Brutais e Bonitos</h2>
+			<h3 class="direita-iniciais">Atualizado em 26/Abril/2022</h3>
+		</hgroup>
+	</header>
+
+<p><img src="_imagens/tsutarjaicon.png"/>Tsutarja é um Pokémon baseado numa cobra-cipó. Ele e suas evoluções são apenas do tipo Grama, e ao longo de suas evoluções ele vai perdendo seus membros. Janovy possui pernas e braços bem pequenos, mas mesmo assim é um Pokémon bastante rápido. Ele costuma se esconder nas folhagens espessas para evitar ataques do seu oponente. Sua evolução, Jalorda,  só ataca seu oponente com força total quando ele não se incomoda com seu olhar penetrante.</p>
+
+<p><img src="_imagens/pokabuicon.png"/>Pokabu é o inicial do tipo Fogo, e pra variar, ganha o tipo Lutador ao evoluir. De uma aparência fofa e indefesa, Tepig se torna o forte Chaoboo, que passa a ser um porco bípede e possui fogo em seu estômago. Enbuoh, seu último estágio, é ainda mais assustador. Ele usa sua força e velocidade para atacar seus oponentes com ataques de mestre de luta. Porém, ele também pode cuspir fogo em seus alvos.</p>
+
+<p><img src="_imagens/mijumaruicon.png"/>Mijumaru é o inicial lontra marinha do tipo Água. Ele carrega uma concha chamada Scalchop e a usa para atacar seus oponentes e cortar berries. Sua evolução Futachimaru possui duas Scalchops presas em sua perna, e assim como Mijumaru, as usa para atacar seu alvo. Por fim, Daikenki, a última evolução do Mijumaru, perde suas Scalchop,  ele acaba ganhando duas Seamitars, que as usa como numa batalha de espadas.</p>
+
+<p>Abaixo você pode clicar na pokebola de sua escolha para ver e saber um pouco mais sobre essas criaturinhas que se destacaram pelo seu design e carisma:</p>
+
+<section id="conteudo">
+<img src="_imagens/iniciais.png" usemap="#pokemapa">
+<map name="pokemapa">
+<area shape="circle" coords="75,111,56" href="iniciais-spec.html#p1" target="janela"/>
+<area shape="circle" coords="147,79,56" href="iniciais-spec.html#p2" target="janela"/>
+<area shape="circle" coords="218,116,56" href="iniciais-spec.html#p3" target="janela"/>
+</map>
+<iframe src="iniciais-spec.html" scrolling="no" name="janela" id="frame-spec"></iframe>
+
+
+</section>
+</article>
+
+<footer id="rodape">
+<p>Copyright 2022 - Marcello Deodoro</br>
+</footer>
+</div>
+</body>
+</html>

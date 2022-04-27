@@ -1,0 +1,156 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+header#cabecalho-professor h1 {
+    font-family: 'Source Serif Pro', sans-serif;
+    font-size: 20pt;
+    color: #ffffff;
+    margin-bottom: 0px;
+    margin-top: 0px;
+   }
+
+   header#cabecalho-professor h2 {
+    font-size: 13pt;
+    color: rgba(255, 255, 255, .9);
+    margin: 0px;
+    background-color: rgba(0, 0, 0, .0);
+   }
+
+   header#cabecalho-professor h3 {
+    font-size: 12px;
+    color: rgba(255, 255, 255, .7);
+    text-align: right;
+    margin-top: 0px;
+   }
+
+ figure.f1 {
+   	position: relative;
+   	border: 5px solid rgba(61, 122, 189, 1);
+   	box-shadow: 1px 1px 4px black;
+   	margin-right: 580px;
+   }
+
+   figure.f1 figcaption{
+   	opacity: 0;
+   	position: absolute;
+   	top: 0px;
+   	background-color: rgba(0, 0, 0, .4);
+   	color: white;
+   	width: 100%;
+   	height: 100%;
+   	padding: 10px;
+   	box-sizing: border-box;
+   	transition: opacity 1s;
+   }
+
+   figure.f1:hover figcaption{
+   	opacity: 1;
+   }
+
+   section.araragitexto {
+   	position: absolute;
+   	text-indent: 5px;
+   	text-align: center;
+   	margin: -470px 300px 180px 245px;
+   	background-color: rgba(61, 122, 189, .1);
+   	padding: 10px;
+   }
+
+   p#textocentral {
+   	text-indent: 0px;
+   	text-align: center;
+   }
+
+   section#textodireita {
+   	width: 570px;
+   	display: block;
+   	float: right;
+   	margin-top: -335px;
+   }
+
+   ul#albumpoke {
+	width: 500px;
+	margin: 10px auto -20px auto;
+	padding: 80px;
+	overflow: hidden;
+	list-style: none;
+}
+
+ul#albumpoke li {
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border: 3px solid #ffffff;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+	-webkit-transition: all .4s ease-in;
+}
+
+ul#albumpoke li span {
+	opacity: 0;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	background-color: rgba(0, 0, 0, .3);
+	font-size: 9pt;
+	line-height: 370px;
+	padding: 5px;
+}
+
+ul#albumpoke li:hover {
+	-webkit-transform: scale(1.8);
+}
+
+ul#albumpoke li:hover span {
+	opacity: 1;
+}
+
+ul#albumpoke li#foto01 {
+	background: url('../_imagens/galeria01.png') no-repeat;
+	background-position: 50% 50%;
+	background-size: 500px 500px;
+	background-color: #ffffff;
+}
+
+ul#albumpoke li#foto01:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+ul#albumpoke li#foto02 {
+	background: url('../_imagens/galeria02.png') no-repeat;
+	background-position: 50% 50%;
+	background-size: 500px 500px;
+	background-color: #ffffff;
+}
+
+ul#albumpoke li#foto02:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+ul#albumpoke li#foto03 {
+	background: url('../_imagens/galeria03.png') no-repeat;
+	background-position: 50% 50%;
+	background-size: 500px 500px;
+	background-color: #ffffff;
+}
+
+ul#albumpoke li#foto03:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+ul#albumpoke li#foto04 {
+	background: url('../_imagens/galeria04.png') no-repeat;
+	background-position: 50% 50%;
+	background-size: 500px 500px;
+	background-color: #ffffff;
+}
+
+ul#albumpoke li#foto04:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
