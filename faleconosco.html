@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Pokémon Black & White</title>
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css">
+	<style>
+		   header#cabecalho-contato h1 {
+    font-family: 'Source Serif Pro', sans-serif;
+    font-size: 20pt;
+    color: #ffffff;
+    margin-bottom: 0px;
+    margin-top: 0px;
+   }
+
+   header#cabecalho-contato h2 {
+    font-size: 13pt;
+    color: rgba(255, 255, 255, .9);
+    margin: 0px;
+    background-color: rgba(0, 0, 0, .0);
+   }
+
+   header#cabecalho-contato h3 {
+    font-size: 12px;
+    color: rgba(255, 255, 255, .7);
+    text-align: right;
+    margin-top: 0px;
+   }
+
+   .direita-contato {
+    text-align: right;
+   }
+</style>
+</head>
+<script>
+function mudaPichu (pichu) {
+	document.getElementById("icone").src = pichu;
+}
+</script>
+<body>
+ <div id="interface">
+ 	<header id="cabecalho">
+<hgroup>
+<h1>Pokémon Black & White</h1>
+<h2>Uma revolução no mundo pokémon</h2>
+</hgroup>
+
+<img id="icone" src="_imagens/pikachu_animado.gif"/>
+<nav id="menu">
+<h1>Menu Principal</h1>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li onmouseover="mudaPichu('_imagens/pikachu_animado.gif')" onmouseout="mudaPichu('_imagens/pikachu_animado.gif')"><a href="iniciais.html">Iniciais</a></li>
+<li onmouseover="mudaPichu('_imagens/pikachu_animado.gif')" onmouseout="mudaPichu('_imagens/pikachu_animado.gif')"><a href="professor.html">Professor</a></li>
+<li onmouseover="mudaPichu('_imagens/pikachu_animado.gif')" onmouseout="mudaPichu('_imagens/pikachu_animado.gif')"><a href="faleconosco.html">Fale Conosco</a></li>
+<li onmouseover="mudaPichu('_imagens/pikachu_animado.gif')" onmouseout="mudaPichu('_imagens/pikachu_animado.gif')"><a href="https://serebii.net/" target="_blank">Serebii.Net</a></li>
+<li onmouseover="mudaPichu('_imagens/raichu_animado.gif')" onmouseout="mudaPichu('_imagens/pikachu_animado.gif')"><a href="fale-conosco.html">Quem Sou Eu ?</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="corpointeiro">
+<article id="corpo-contato">
+	<header id="cabecalho-contato">
+		<hgroup>
+			<h1>Contato</h1>
+			<h2>Formulário de Contato</h2>
+			<h3 class="direita-contato">Atualizado em 26/Abril/2022</h3>
+		</hgroup>
+	</header>
+
+<form method="post" id="fContato" action="mailto:contato@cursoemvideo.com">
+
+<fieldset id="usuario">
+<legend>Identificação do Usuário</legend>
+    <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+    <p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"/></p>
+    <p><label for="cMail">E-mail:</label> <input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder=""/></p>
+    <fieldset id="sexo"><legend>Sexo</legend>
+        <input type="radio" name="tSexo" id="cMasc" checked/> <label for="cMasc">Masculino</label><br/>
+        <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label></fieldset>
+    <p><label for="cNasc">Data de Nascimento:</label> <input type="date" name="tNasc" id="cNasc"/></p>
+</fieldset>
+
+<fieldset id="mensagem">
+<legend>Deixe aqui a sua opinião sobre o meu trabalho</legend>
+    <p><label for="cUrg">Medidor de Gostei:</label> Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Máx</p>
+    <p><label for="cMsg">Mensagem:</label> <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+</fieldset>
+
+<fieldset id="pedido">
+<legend>Quero um site desses!</legend>
+    <p><label for="cPed">Gostaria de adquirir um site desses! quando disponível</label></p>
+    <p><label for="cCor">Cores:</label></p>
+    <p><label for="cQtd">Tema:</label></p>
+    <p><label for="cTot">Preço Total: R$</label></p>
+</fieldset>
+
+[BOTÃO ENVIAR]
+</form>
+
+</article>
+</section>
+
+<footer id="rodape">
+<p>Copyright 2022 - Marcello Deodoro</br>
+</footer>
+</div>
+</body>
+</html>

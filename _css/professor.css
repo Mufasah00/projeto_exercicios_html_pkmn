@@ -143,6 +143,10 @@ ul#albumpoke li#foto03:hover {
 	background-size: 200px 200px;
 }
 
+ul#albumpoke li#foto03 span:hover {
+	height: fit-content;
+}
+
 ul#albumpoke li#foto04 {
 	background: url('../_imagens/galeria04.png') no-repeat;
 	background-position: 50% 50%;
