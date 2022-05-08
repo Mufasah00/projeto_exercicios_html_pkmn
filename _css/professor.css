@@ -51,6 +51,8 @@ header#cabecalho-professor h1 {
 
    section.araragitexto {
    	position: absolute;
+   	min-width: 380px;
+   	max-width: 1744px;
    	text-indent: 5px;
    	text-align: center;
    	margin: -470px 300px 180px 245px;

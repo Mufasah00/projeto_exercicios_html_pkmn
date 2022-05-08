@@ -10,6 +10,7 @@ body {
 }
 
 div#interface {
+    position: relative;
     width: 900px;
     background-color: rgba(21, 28, 33, .7);
     margin: -20px auto 0px auto;
@@ -18,10 +19,10 @@ div#interface {
 }
 
 /* posição do corno do pichu */
-header#cabecalho img#icone {
+img#icone {
     position: absolute;
-    left: 1050px;
-    top: 120px;
+    left: 830px;
+    top: 130px;
 }
 
 header#cabecalho {
@@ -102,8 +103,8 @@ header#cabecalho h2 {
     list-style: none;
     text-transform: uppercase;
     position: absolute;
-    top: 115px;
-    left: 190px;
+    top: 125px;
+    left: -30px;
    }
 
    nav#menu li {
@@ -111,6 +112,7 @@ header#cabecalho h2 {
     background-color: rgba(61, 122, 189, 1);
     padding: 10px;
     margin: 2px;
+    border-radius: 4px;
     transition: background-color 1s;
    }
 
@@ -146,7 +148,7 @@ header#cabecalho h2 {
     background-color: rgba(61, 122, 189, 1);
     padding: 5px 0px 5px 10px;
     margin: 10px 0px 10px 0px;
-
+    border-radius: 4px;
    }
 
    header#cabecalho-artigo h1 {
@@ -229,6 +231,7 @@ header#cabecalho h2 {
     font-size: 13pt;
     color: #ffffff;
     padding: 5px;
+    border-radius: 4px;
    }
 
 
