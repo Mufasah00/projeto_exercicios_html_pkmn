@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Pokémon Black & White</title>
 	<link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="_css/faleconosco.css">
 	<style>
 		   header#cabecalho-contato h1 {
     font-family: 'Source Serif Pro', sans-serif;
@@ -37,6 +38,14 @@ function mudaPichu (pichu) {
 	document.getElementById("icone").src = pichu;
 }
 </script>
+<script> 
+    function calc_total() {
+        var qtdd = parseInt(document.getElementById('cQtdd').value);
+        tot = qtdd * 3000;
+        document.getElementById('cTot').value = tot;
+    }
+
+</script>
 <body>
  <div id="interface">
  	<header id="cabecalho">
@@ -69,7 +78,7 @@ function mudaPichu (pichu) {
 		</hgroup>
 	</header>
 
-<form method="post" id="fContato" action="mailto:contato@cursoemvideo.com">
+<form method="post" id="fContato" action="mailto:contato@cursoemvideo.com" oninput="calc_total();">
 
 <fieldset id="usuario">
 <legend>Identificação do Usuário</legend>
@@ -90,13 +99,21 @@ function mudaPichu (pichu) {
 
 <fieldset id="pedido">
 <legend>Quero um site desses!</legend>
-    <p><label for="cPed">Gostaria de adquirir um site desses! quando disponível</label></p>
-    <p><label for="cCor">Cores:</label></p>
-    <p><label for="cQtd">Tema:</label></p>
-    <p><label for="cTot">Preço Total: R$</label></p>
+    <p><input type="checkbox" name="tPed" id="cPed" checked/>
+        <label for="cPed">Gostaria de adquirir um site desses quando disponível!!!</label></p>
+    <p><label for="cCor">Cores:</label>
+        <input type="color" name="tCor" id="cCor" value="#4682B4"/><input type="color" name="tCor" id="cCor" value="#708090"/></p>
+    <p><label for="cTema">Tema:</label>
+        <input type="text" name="tTema" id="cTema" size="20" maxlength="30"/></p>
+    <p><label for="cQtdd">Qtdd:</label>
+        <input type="number" name="cQtdd" id="cQtdd" min="0" max="3" value="0"/></p>
+    <p><label for="cTot">Preço Total: R$</label>
+        <input type="text" name="tTot" id="cTot" placeholder="Total a Pagar" readonly/></p>
 </fieldset>
 
-[BOTÃO ENVIAR]
+<div id="botaopose">
+<input type="image" name="tEnviar" src="_imagens/botaoenviar.png"/>
+</div>
 </form>
 
 </article>
